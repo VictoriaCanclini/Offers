@@ -1,17 +1,18 @@
 import React from "react";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+import Offer from "@/Components/Offer";
 import InputError from "@/Components/InputError";
 import PrimaryButton from "@/Components/PrimaryButton";
 import { useForm, Head } from "@inertiajs/react";
 
-export default function Index({ auth }) {
+export default function Index({ auth, offers }) {
     const { data, setData, post, processing, reset, errors } = useForm({
         message: "",
     });
 
     const submit = (e) => {
         e.preventDefault();
-        post(route("chirps.store"), { onSuccess: () => reset() });
+        post(route("offers.store"), { onSuccess: () => reset() });
     };
 
     return (
@@ -28,9 +29,15 @@ export default function Index({ auth }) {
                     ></textarea>
                     <InputError message={errors.message} className="mt-2" />
                     <PrimaryButton className="mt-4" disabled={processing}>
-                        Chirp
+                        Offer
                     </PrimaryButton>
                 </form>
+
+                <div className="mt-6 bg-white shadow-sm rounded-lg divide-y">
+                    {offers.map((offer) => (
+                        <Offer key={offer.id} offer={offer} />
+                    ))}
+                </div>
             </div>
         </AuthenticatedLayout>
     );

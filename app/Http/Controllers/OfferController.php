@@ -22,7 +22,7 @@ class OfferController extends Controller
     {
         //return response('Hello, World!');
         return Inertia::render('Offers/Index', [
-            //
+            'offers' => Offer::with('user:id,name')->latest()->get(), 
         ]);
     }
 
