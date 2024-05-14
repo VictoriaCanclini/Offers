@@ -16,10 +16,16 @@ class Code extends Model
         'discount_amount',
         'expires_at',
         'user_id',
+        'offer_id',
     ];
 
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+    
+    public function offer(): BelongsTo
+    {
+        return $this->belongsTo(Offer::class);
     }
 }

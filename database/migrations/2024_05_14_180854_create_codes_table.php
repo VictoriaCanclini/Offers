@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('code')->unique();
             $table->decimal('discount_amount', 8, 2);
             $table->date('expires_at')->nullable();
+            $table->foreignId('offer_id')->nullable()->constrained()->onDelete('set null');
             $table->foreignId('user_id')->nullable()->constrained()->onDelete('set null');
             $table->timestamps();
         });

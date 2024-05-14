@@ -26,13 +26,19 @@ export default function Authenticated({ user, header, children }) {
                                     href={route("dashboard")}
                                     active={route().current("dashboard")}
                                 >
-                                    Ofertas
+                                    Dashboard
                                 </NavLink>
                                 <NavLink
                                     href={route("offers.index")}
                                     active={route().current("offers.index")}
                                 >
-                                    Codigos promocionales
+                                    Ofertas
+                                </NavLink>
+                                <NavLink
+                                    href={route("codes.index")}
+                                    active={route().current("codes.index")}
+                                >
+                                    Códigos Promocionales
                                 </NavLink>
                             </div>
                         </div>
@@ -142,7 +148,13 @@ export default function Authenticated({ user, header, children }) {
                             href={route("offers.index")}
                             active={route().current("offers.index")}
                         >
-                            Offers
+                            Ofertas
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            href={route("codes.index")}
+                            active={route().current("codes.index")}
+                        >
+                            Códigos Promocionales
                         </ResponsiveNavLink>
                     </div>
 

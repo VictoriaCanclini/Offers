@@ -17,7 +17,7 @@ class CodeController extends Controller
     public function index(): Response 
     {
         return Inertia::render('Codes/Index', [
-            //
+            'codes' => Code::with('user:id,name')->latest()->get(),
         ]);
     }
 
@@ -35,7 +35,7 @@ class CodeController extends Controller
     public function store(Request $request): RedirectResponse
     {
         $validated = $request->validate([
-            'message' => 'required|string|max:255',
+            
         ]);
  
         $request->user()->codes()->create($validated);

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Offer;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-//use Illuminate\Http\Response;
 use Inertia\Inertia;
 use Inertia\Response;
 
@@ -20,9 +19,8 @@ class OfferController extends Controller
     public function index(): Response 
 
     {
-        //return response('Hello, World!');
         return Inertia::render('Offers/Index', [
-            'offers' => Offer::with('user:id,name')->latest()->get(), 
+            'offers' => Offer::all(), 
         ]);
     }
 

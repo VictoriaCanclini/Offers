@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\OfferController;
+use App\Http\Controllers\CodeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -26,7 +27,11 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('offers', OfferController::class)
-    ->only(['index', 'store'])
+    ->only(['index'])
+    ->middleware(['auth', 'verified']);
+
+Route::resource('codes', CodeController::class)
+    ->only(['index'])
     ->middleware(['auth', 'verified']);
 
 require __DIR__.'/auth.php';
