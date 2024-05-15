@@ -43,9 +43,14 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
 ### Instalación
 
 1. En primer lugar debe clonar el <a href="https://github.com/VictoriaCanclini/Offers">Repositorio</a> de Github:
+   \n
    `git clone git@github.com:VictoriaCanclini/Offers.git`
-2. En segundo lugar moverse al directorio del proyecto: cd offer.
-3. Ejecutar **composer install** para instalar las dependencias de PHP.
+2. En segundo lugar moverse al directorio del proyecto:
+   \n
+   `cd offer`
+3. Luego ejecutar el siguiente comando para instalar las dependencias de PHP:
+   \n
+   `composer install`
 4. Instalar las dependencias de javascript con **npm install**.
 5. Instalar **composer require laravel/breeze --dev**.
 6. Installar **php artisan breeze:install react**. Breeze instalará y configurará sus dependencias de front-end por usted, por lo que solo necesitamos iniciar el servidor de desarrollo react.
