@@ -42,22 +42,23 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
 
 ### Instalación
 
-1. En primer lugar debe acceder a mi repositorio de Github y clonar el proyecto con git clone git@github.com:VictoriaCanclini/Offers.git
+1. En primer lugar debe acceder a mi repositorio de Github y clonar el proyecto con **git clone git@github.com:VictoriaCanclini/Offers.git**
+   <br />
    <a href="https://github.com/VictoriaCanclini/Offers"><strong>Repositorio Github »</strong></a>
-2. En segundo lugar moverse al directorio del proyecto: cd offers.
-3. Ejecutar composer install para instalar las dependencias de PHP
-4. Instalar las dependencias de javascript con npm install
-5. Instalar composer require laravel/breeze --dev.
-6. Installar php artisan breeze:install react. Breeze instalará y configurará sus dependencias de front-end por usted, por lo que solo necesitamos iniciar el servidor de desarrollo react.
-7. Ejecutamos el comando cp .env.example .env Para copiar el archivo .env.example a .env
+2. En segundo lugar moverse al directorio del proyecto: cd offer.
+3. Ejecutar **composer install** para instalar las dependencias de PHP.
+4. Instalar las dependencias de javascript con **npm install**.
+5. Instalar **composer require laravel/breeze --dev**.
+6. Installar **php artisan breeze:install react**. Breeze instalará y configurará sus dependencias de front-end por usted, por lo que solo necesitamos iniciar el servidor de desarrollo react.
+7. Ejecutamos el comando **cp .env.example .env** Para copiar el archivo .env.example a .env
    cuando utilizamos un sistema de control de versiones como git, este archivo se excluye del repositorio por medidas de seguridad.
-8. Por medidas de seguridad cada proyecto de Laravel cuenta con una clave única que se crea en el archivo .env al iniciar el proyecto. Ejecutar el siguiente comando: php artisan key:generate
-9. Asegúrate de que tienes SQLite instalado o la base de datos que prefieras configurada. Para SQLite: touch database/database.sqlite
+8. Por medidas de seguridad cada proyecto de Laravel cuenta con una clave única que se crea en el archivo .env al iniciar el proyecto. Ejecutar el siguiente comando: **php artisan key:generate**.
+9. Asegúrate de que tienes SQLite instalado o la base de datos que prefieras configurada. Para SQLite: **touch database/database.sqlite**.
 10. Actualiza el archivo .env con la configuración de la base de datos: DB_CONNECTION=sqlite
     DB_DATABASE=/ruta/a/tu/proyecto/database/database.sqlite
-11. php artisan migrate Para ejecutar migraciones
-12. Ejecutamos npm run dev
-13. Por ultimo ejecutamos php artisan serve para levantar el proyecto.
+11. **php artisan migrate**, Para ejecutar migraciones.
+12. Ejecutamos **npm run dev**.
+13. Por ultimo ejecutamos **php artisan serve** para levantar el proyecto.
 
 <p align="right"><a href="#home">⬆ Volver a home</a></p>
 
