@@ -43,13 +43,13 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
 ### Instalación
 
 1. En primer lugar debe clonar el <a href="https://github.com/VictoriaCanclini/Offers">Repositorio</a> de Github:
-   \n
+   <br>
    `git clone git@github.com:VictoriaCanclini/Offers.git`
 2. En segundo lugar moverse al directorio del proyecto:
-   \n
+   <br>
    `cd offer`
 3. Luego ejecutar el siguiente comando para instalar las dependencias de PHP:
-   \n
+   <br>
    `composer install`
 4. Instalar las dependencias de javascript con **npm install**.
 5. Instalar **composer require laravel/breeze --dev**.
