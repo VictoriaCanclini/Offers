@@ -62,7 +62,7 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
 
 🔹 PULL REQUEST
 
-1. **Fork** to the project.
+1. **Fork** el proyecto.
 2. Crear una rama (`git checkout -b feature/MyFeature`)
 3. Commitear cambios (`git commit -m "commit"'`)
 4. Push a la rama principal (`git push origin feature/MyFeature`)
@@ -86,4 +86,4 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
 
 </p>
 
-<p align="right"><a href="#home">⬆ Back to top</a></p>
+<p align="right"><a href="#home">⬆ Volver a home</a></p>
