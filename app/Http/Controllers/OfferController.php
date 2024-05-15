@@ -101,6 +101,6 @@ class OfferController extends Controller
 // use App\Models\Offer;
 
 // Offer::create([
-//     'message' => 'Oferta 3',
+//     'message' => 'Oferta 10',
 // ]);
 

@@ -4,7 +4,7 @@ import InputError from "@/Components/InputError";
 import PrimaryButton from "@/Components/PrimaryButton";
 
 export default function Offer({ offer }) {
-    const { data, setData, post, reset, processing, errors } = useForm({
+    const { post, reset, processing, errors } = useForm({
         offer_id: offer.id,
     });
 
