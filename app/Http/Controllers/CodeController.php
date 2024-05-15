@@ -43,7 +43,6 @@ class CodeController extends Controller
     {
         $validated = $request->validate([
             'offer_id' => 'required|exists:offers,id',
-            //'user_id' => 'required|exists:user,id',
         ]);
 
         Code::create([
@@ -52,6 +51,7 @@ class CodeController extends Controller
             'expires_at' => now()->addMonth(), // Establecer una fecha de expiración (por ejemplo, 1 mes a partir de ahora)
             'user_id' => $request->user()->id, // Asociar el código con el usuario autenticado
             'offer_id' => $validated['offer_id'], // Asociar el código con la oferta
+            'validated' => false, // Por default inicia en false
         ]);
 
         return redirect()->route('codes.index');
@@ -76,9 +76,13 @@ class CodeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Code $code)
+    public function update(Request $request, Code $code): RedirectResponse
     {
-        //
+        if ($code->user_id == $request->user()->id) {
+            $code->update(['validated' => true]);
+            return redirect()->back()->with('success', 'Código validado con éxito.');
+        }
+        return redirect()->back()->with('error', 'No se pudo validar el código.');
     }
 
     /**

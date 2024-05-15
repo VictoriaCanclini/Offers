@@ -17,6 +17,7 @@ class Code extends Model
         'expires_at',
         'user_id',
         'offer_id',
+        'validated',
     ];
 
     public function user(): BelongsTo
