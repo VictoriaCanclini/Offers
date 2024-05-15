@@ -11,6 +11,7 @@ export default function Offer({ offer }) {
     const submit = (e) => {
         e.preventDefault();
         post(route("codes.store"), { onSuccess: () => reset() });
+        alert("Código generado exitosamente");
     };
     return (
         <div className="p-6 flex space-x-2">

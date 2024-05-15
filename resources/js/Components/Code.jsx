@@ -15,6 +15,7 @@ export default function Code({ code }) {
         patch(route("codes.update", code.id), {
             onSuccess: () => setIsValidated(true),
         });
+        alert("Código canjeado exitosamente");
     };
 
     return (

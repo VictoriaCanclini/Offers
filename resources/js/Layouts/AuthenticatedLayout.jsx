@@ -26,7 +26,7 @@ export default function Authenticated({ user, header, children }) {
                                     href={route("dashboard")}
                                     active={route().current("dashboard")}
                                 >
-                                    Dashboard
+                                    Inicio
                                 </NavLink>
                                 <NavLink
                                     href={route("offers.index")}
@@ -142,7 +142,7 @@ export default function Authenticated({ user, header, children }) {
                             href={route("dashboard")}
                             active={route().current("dashboard")}
                         >
-                            Dashboard
+                            Inicio
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
                             href={route("offers.index")}
