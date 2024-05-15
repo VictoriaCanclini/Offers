@@ -56,6 +56,7 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
 -   [x] Generar código promocional único
 -   [x] Canjear código promocional único
 -   [x] Feedback al usuario
+-   [x] Logout
 
 <p align="right"><a href="#home">⬆ Volver a home</a></p>
 
@@ -71,7 +72,7 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
 
 <!-- CONTACTO -->
 
-## ContactO
+## Contacto
 
 <p align="left">
 
