@@ -1,66 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<a name="home"></a>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<!-- INTRODUCCIÓN -->
+
+<div align="center">
+  <a href="#">
+    <img src="/public/img/ofertas.jpg" alt="Logo" width="400">
+  </a>
+
+  <p align="center">
+    <h3 align="center">Ofertas</h3>
+    <br />
+    <a href="https://github.com/VictoriaCanclini/Offers"><strong>Repositorio Github »</strong></a>
+  </p>
+</div>
+
+<!-- SOBRE EL PROYECTO -->
+
+## Sobre el proyecto
+
+Una pequeña plataforma donde un usuario puede acceder, ve una lista de ofertas, y puede, haciendo click sobre alguna de ellas, generar un código único que se guardará en la base de datos y después puede revisar que códigos promocionales tiene en una página de detalle. En la página de detalle, el usuario puede pulsar sobre un botón canjear código que marcará como canjeado el código de la BBDD y confirmará al usuario que se ha canjeado.
+
+### Tecnologías
+
+|          |         |        |
+| :------: | :-----: | :----: |
+|   PHP    | Laravel | React  |
+| Tailwind |         | Breeze |
+
+<p align="right"><a href="#home">⬆ Volver a home</a></p>
+
+<!-- PARA EMPEZAR -->
+
+## Para empezar
+
+Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga las instrucciones a continuación para ejecutarlo.
+
+### Requisitos
+
+1. Asegurarse de tener instalado PHP y Composer en su máquina local.
+
+### Instalación
+
+1. Para levantar el proyecto ejecute el siguiente comando: php artisan serve.
+2. Para levantar Laravel Breeze ejecute el siguiente comando: npm run dev.
+
+<p align="right"><a href="#home">⬆ Volver a home</a></p>
+
+<!-- FUNCTIONALITIES -->
+
+## Funcionalidades
+
+-   [x] Register
+-   [x] Login
+-   [x] Ver lista de ofertas
+-   [x] Generar código promocional único
+-   [x] Canjear código promocional único
+-   [x] Feedback al usuario
+
+<p align="right"><a href="#home">⬆ Volver a home</a></p>
+
+🔹 PULL REQUEST
+
+1. **Fork** to the project.
+2. Crear una rama (`git checkout -b feature/MyFeature`)
+3. Commitear cambios (`git commit -m "commit"'`)
+4. Push a la rama principal (`git push origin feature/MyFeature`)
+5. Merge a la rama primcipal
+
+<p align="right"><a href="#home">⬆ Volver a home</a></p>
+
+<!-- CONTACTO -->
+
+## ContactO
+
+<p align="left">
+
+  <p>Victoria Canclini:</p>
+  <a href="mailto:vikicanclini@gmail.com" target="_blank" rel="noopener noreferrer">
+    <img alt="Gmail" title="gmail" src="https://custom-icon-badges.demolab.com/badge/-vikicanclini@gmail.com-red?style=for-the-badge&logo=mention&logoColor=white"/></a>
+  <a href="www.linkedin.com/in/victoriacanclini" target="_blank" rel="noopener noreferrer">
+    <img alt="Linkedin" title="linkedin" src="https://custom-icon-badges.demolab.com/badge/-Linkedin-blue?style=for-the-badge&logoColor=white&logo=linkedin"/></a>
+  <a href="https://github.com/VictoriaCanclini" target="_blank" rel="noopener noreferrer">
+    <img alt="Github" title="Github" src="https://custom-icon-badges.demolab.com/badge/-Github-grey?style=for-the-badge&logoColor=white&logo=github"/></a>
+
 </p>
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
--   [Simple, fast routing engine](https://laravel.com/docs/routing).
--   [Powerful dependency injection container](https://laravel.com/docs/container).
--   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
--   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
--   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
--   [Robust background job processing](https://laravel.com/docs/queues).
--   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
--   **[Vehikl](https://vehikl.com/)**
--   **[Tighten Co.](https://tighten.co)**
--   **[WebReinvent](https://webreinvent.com/)**
--   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
--   **[64 Robots](https://64robots.com)**
--   **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
--   **[Cyber-Duck](https://cyber-duck.co.uk)**
--   **[DevSquad](https://devsquad.com/hire-laravel-developers)**
--   **[Jump24](https://jump24.co.uk)**
--   **[Redberry](https://redberry.international/laravel/)**
--   **[Active Logic](https://activelogic.com)**
--   **[byte5](https://byte5.de)**
--   **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<p align="right"><a href="#home">⬆ Back to top</a></p>
