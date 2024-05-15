@@ -47,7 +47,7 @@ class User extends Authenticatable
         ];
     }
 
-    public function promoCodes(): HasMany
+    public function codes(): HasMany
     {
         return $this->hasMany(Code::class);
     }

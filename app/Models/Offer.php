@@ -14,7 +14,7 @@ class Offer extends Model
         'message'
     ];
 
-    public function promoCodes(): HasMany
+    public function codes(): HasMany
     {
         return $this->hasMany(Code::class);
     }

@@ -31,7 +31,7 @@ Route::resource('offers', OfferController::class)
     ->middleware(['auth', 'verified']);
 
 Route::resource('codes', CodeController::class)
-    ->only(['index'])
+    ->only(['index', 'store'])
     ->middleware(['auth', 'verified']);
 
 require __DIR__.'/auth.php';
