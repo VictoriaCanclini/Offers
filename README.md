@@ -51,12 +51,22 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
 3. Luego ejecutar el siguiente comando para instalar las dependencias de PHP:
    <br>
    `composer install`
-4. Instalar las dependencias de javascript con **npm install**.
-5. Instalar **composer require laravel/breeze --dev**.
-6. Installar **php artisan breeze:install react**. Breeze instalará y configurará sus dependencias de front-end por usted, por lo que solo necesitamos iniciar el servidor de desarrollo react.
-7. Ejecutamos el comando **cp .env.example .env** Para copiar el archivo .env.example a .env
-   cuando utilizamos un sistema de control de versiones como git, este archivo se excluye del repositorio por medidas de seguridad.
-8. Por medidas de seguridad cada proyecto de Laravel cuenta con una clave única que se crea en el archivo .env al iniciar el proyecto. Ejecutar el siguiente comando: **php artisan key:generate**.
+4. Instalar las dependencias de javascript con:
+   <br>
+   `npm install`
+5. Instalar Laravel Breeze, el cual instalará y configurará sus dependencias de front-end por usted:
+   <br>
+   `composer require laravel/breeze --dev`
+6. Para iniciar el servidor de desarrollo react:
+   <br>
+   `php artisan breeze:install react`
+7. Debemos copiar el archivo que contine las variable de entorno:
+   <br>
+   `cp .env.example .env`
+   Cuando utilizamos un sistema de control de versiones como git, este archivo se excluye del repositorio por medidas de seguridad.
+8. Por medidas de seguridad cada proyecto de Laravel cuenta con una clave única en el `.env`, para ello debemos ejecutar el siguiente comando:
+   <br>
+   `php artisan key:generate`
 9. Asegúrate de que tienes SQLite instalado o la base de datos que prefieras configurada. Para SQLite: **touch database/database.sqlite**.
 10. Actualiza el archivo .env con la configuración de la base de datos: DB_CONNECTION=sqlite
     DB_DATABASE=/Users/viki/Desktop/prueba/Prueba-Offers/offer/database/database.sqlite
