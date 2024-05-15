@@ -55,7 +55,7 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
 8. Por medidas de seguridad cada proyecto de Laravel cuenta con una clave única que se crea en el archivo .env al iniciar el proyecto. Ejecutar el siguiente comando: **php artisan key:generate**.
 9. Asegúrate de que tienes SQLite instalado o la base de datos que prefieras configurada. Para SQLite: **touch database/database.sqlite**.
 10. Actualiza el archivo .env con la configuración de la base de datos: DB_CONNECTION=sqlite
-    DB_DATABASE=/ruta/a/tu/proyecto/database/database.sqlite
+    DB_DATABASE=/Users/viki/Desktop/prueba/Prueba-Offers/offer/database/database.sqlite
 11. **php artisan migrate**, Para ejecutar migraciones.
 12. Ejecutamos **npm run dev**.
 13. Por ultimo ejecutamos **php artisan serve** para levantar el proyecto.
