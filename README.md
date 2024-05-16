@@ -74,9 +74,15 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
 //10. Actualiza el archivo .env con la configuración de la base de datos: DB_CONNECTION=sqlite
 DB_DATABASE=/Users/viki/Desktop/prueba/Prueba-Offers/offer/database/database.sqlite
 
-11. **php artisan migrate**, Para ejecutar migraciones.
-12. Ejecutamos **npm run dev**.
-13. Por ultimo ejecutamos **php artisan serve** para levantar el proyecto.
+11. Este proyecto contiene una base de datos, para poder generarla debes ejecutar las migraciones:
+    <br>
+    `php artisan migrate`
+12. Ejecutar:
+    <br>
+    `npm run dev`
+13. Por ultimo para levantar el servideo de desarollo de Laravel:
+    <br>
+    `php artisan serve`
 
 <p align="right"><a href="#home">⬆ Volver a home</a></p>
 
