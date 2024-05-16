@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="#">
-    <img src="/public/img/ofertas.jpg" alt="Logo" width="400">
+    <img src="/public/img/super-sale.png" alt="Logo" width="400">
   </a>
 
   <p align="center">
@@ -94,6 +94,8 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
   <p>Victoria Canclini:</p>
   <a href="mailto:vikicanclini@gmail.com" target="_blank" rel="noopener noreferrer">
     <img alt="Gmail" title="gmail" src="https://custom-icon-badges.demolab.com/badge/-vikicanclini@gmail.com-red?style=for-the-badge&logo=mention&logoColor=white"/></a>
+     <a href="https://my-portfolio-victoria.vercel.app" target="_blank" rel="noopener noreferrer">
+    <img alt="Portfolio" title="Portfolio" src="https://custom-icon-badges.demolab.com/badge/-vikicanclini@gmail.com-red?style=for-the-badge&logo=mention&logoColor=white"/></a>
   <a href="www.linkedin.com/in/victoriacanclini" target="_blank" rel="noopener noreferrer">
     <img alt="Linkedin" title="linkedin" src="https://custom-icon-badges.demolab.com/badge/-Linkedin-blue?style=for-the-badge&logoColor=white&logo=linkedin"/></a>
   <a href="https://github.com/VictoriaCanclini" target="_blank" rel="noopener noreferrer">
