@@ -18,14 +18,16 @@
 
 ## Sobre el proyecto
 
-Una pequeña plataforma donde un usuario puede acceder, ver una lista de ofertas y puede haciendo click sobre alguna de ellas, generar un código único que se guardará en la base de datos y después puede revisar que códigos promocionales tiene en una página de detalle. En la página de detalle, el usuario puede pulsar sobre un botón canjear código que marcará como canjeado el código de la BBDD y confirmará al usuario que se ha canjeado.
+Una pequeña plataforma donde un usuario puede registrarse y acceder
+a una lista de ofertas. Haciendo click sobre alguna de ellas, puede generar un código único promocional que se guardará en la base de datos.
+El usuario puede revisar que códigos promocionales tiene linkeados a su cuenta en una página de detalle. En la página de detalle el usuario puede, pulsando el botón de `CANJEAR CÓDIGO`, marcar como validado y ver el listado de códigos canjeados.
 
 ### Tecnologías
 
-|          |         |        |
-| :------: | :-----: | :----: |
-|   PHP    | Laravel | React  |
-| Tailwind |         | Breeze |
+|         |          |        |
+| :-----: | :------: | :----: |
+|   PHP   |  SQLite  | React  |
+| Laravel | Tailwind | Breeze |
 
 <p align="right"><a href="#home">⬆ Volver a home</a></p>
 
@@ -61,7 +63,7 @@ Este proyecto aún no está deployado, pero puedes probarlo en tu local. Siga la
 6. Por medidas de seguridad cada proyecto de Laravel cuenta con una clave única que se crea en el archivo `.env`, puedes generar una nueva API key desde la consola usando:
    <br>
    `php artisan key:generate`
-7. Ejecutar:
+7. Necesitamos iniciar el servidor de desarrollo Vite para visualizar los módulos del proyecto escritos en react:
    <br>
    `npm run dev`
 8. Por ultimo para levantar el servidor de desarollo de Laravel:
